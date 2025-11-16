@@ -1,3 +1,4 @@
+    #base   "../_jofrehud/resource/gamemenu.res"
     #base   "../#users/custom/resource/gamemenu.res"
     #base   "../#users/zenith/resource/gamemenu.res"
     #base   "../_budhud/resource/gamemenu.res"

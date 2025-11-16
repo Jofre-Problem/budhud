@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/charinfoloadoutsubpanel.res"
     #base    "../../#users/custom/resource/ui/charinfoloadoutsubpanel.res"
     #base    "../../_stream/resource/ui/charinfoloadoutsubpanel.res"
     #base    "../../_budhud/resource/ui/charinfoloadoutsubpanel.res"

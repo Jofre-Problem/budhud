@@ -1,6 +1,7 @@
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     // #users/custom
     ////////////////////////////////////////////////////////////////////////////////////////////////////
+    #base   "../_jofrehud/scripts/hudlayout.res"
     #base   "../#users/custom/scripts/hudlayout.res"
     #base   "../#users/custom/#customization/_enabled/bh_dev_grid.res"
     #base   "../#users/custom/#customization/_enabled/bh_player_showvoiceavatars.res"

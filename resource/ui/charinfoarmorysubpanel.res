@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/charinfoarmorysubpanel.res"
     #base    "../../#users/custom/resource/ui/charinfoarmorysubpanel.res"
     #base    "../../_stream/resource/ui/charinfoarmorysubpanel.res"
     #base    "../../_budhud/resource/ui/charinfoarmorysubpanel.res"

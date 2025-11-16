@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/classloadoutpanel.res"
     #base    "../../#users/custom/resource/ui/classloadoutpanel.res"
     #base    "../../_stream/resource/ui/classloadoutpanel.res"
     #base    "../../_budhud/resource/ui/classloadoutpanel.res"
