@@ -2,12 +2,46 @@
 #base "polyconfig1_mm.res"
 "j"
 {	
-	
 
+    "bh_TopPin"
+    {
+        "ypos"                                                      "9999"
+    }
+   "bh_InfoDisplay"
+    {
+ "ypos"                                                      "9999"
+    }
 
+    "bh_CenterPin"
+    {
+ "ypos"                                                      "9999"
+    }
 
+    "bh_BottomPin"
+    {
+ "ypos"                                                      "9999"
+    }
+    "bh_BelowTopPin"
+    {
+ "ypos"                                                      "9999"
+    }
+    "RankPanel"
+    {
+ "ypos"                                                      "9999"
+    }
+    "bh_backgroundfooter"
+    {
+ "ypos"                                                      "9999"
+    }
 
-
+    "containerbg0"
+    {
+ "ypos"                                                      "9999"
+    }
+    "charabg0"
+    {
+ "ypos"                                                      "9999"
+    }
 
 
 
@@ -741,22 +775,11 @@
 	{
 		wide				0
 	}
-		"gradient2"
-			{
-				ControlName				ImagePanel
-				fieldName				"gradient2"
-				zpos					1
-				ypos					"0"
-				zpos 6001
-				wide					p1
-				tall					15
-				proportionaltoparent		1
-				image					"replay/thumbnails/gradient"
-				scaleImage				1
-				mouseinputenabled 0
-			}		
+	
 	"WorkshopButton"		// open advanced options
-	{
+	{    
+		"ControlName"                                               "CExImageButton"
+        "fieldname"                                                 "WorkshopButton"
 		xPos					0
 		yPos					0
 		wide					30
@@ -766,17 +789,15 @@
 		textAlignment			center
 		font			"NewIcons12"
 		command				"engine workshop"
-
+		
 		sound_depressed			"ui/buttonclick.wav"
 		sound_released			"ui/buttonclickrelease.wav"
-		
+		"actionsignallevel" "1"
 		defaultFgColor_override		"210 130 231 255"
 		armedFgColor_override		"157 83 33 255"
-		paintBackground			0
+		paintBackground			1
+		defaultbgColor_override		"210 130 231 255"
 
-		"navUp"			""
-		"navLeft"		""
-		"navRight"		"BrowseServers"
 		"border_default"	"NoBorder"
 		
 		"image_drawcolor"	"Blank"		
@@ -785,9 +806,42 @@
 			"wide"			"0"
 		}	
 	}
+	"WorkshopButtondummy"
+	{    
+		"ControlName"                                               "CExImageButton"
+        "fieldname"                                                 "WorkshopButtondummy"
+		xPos					0
+		yPos					0
+		wide					30
+		tall					15
+		zpos		"2001"
+		labelText				"j"//"ø"
+		textAlignment			center
+		font			"NewIcons12"
+		command				"engine workshop"
+		
+		sound_depressed			"ui/buttonclick.wav"
+		sound_released			"ui/buttonclickrelease.wav"
+		"actionsignallevel" "1"
+		defaultFgColor_override		"210 130 231 255"
+		armedFgColor_override		"157 83 33 255"
+		paintBackground			0
+
+
+		"border_default"	"NoBorder"
+		
+		"image_drawcolor"	"Blank"		
+		"SubImage"
+		{
+			"wide"			"0"
+		}	
+	}	
 	"MOTD_ShowButtonPanel"
 	{
+		 "ControlName"                                               "EditablePanel"
+        "fieldname"                                                 "MOTD_ShowButtonPanel"
 		"xpos"	"0"
+		visible 1
 		"ypos"	"0"
 		"zpos"			"3000"	
 		wide					30
@@ -800,9 +854,9 @@
 			"ControlName"	"CExImageButton"
 			"fieldName"		"MOTD_ShowButtonPanel_SB"
 			"zpos"			"1"
-		wide					30
-		tall					15
-
+			wide					30
+			tall					15
+			visible 1
 			"labelText"		"p"
 			"font"			"NewIcons12"
 			"textAlignment"	"center"
@@ -826,7 +880,6 @@
 			}			
 		}
 	}
-
 
 	"NewUserForumsButton"
 	{
@@ -1442,86 +1495,8 @@
 	{
 		"visible"			"0"
 	}
-	"WorkshopButton"		// open advanced options
-	{
-	"ControlName""CExImageButton"
-"fieldName""WorkshopButton"	
-		xPos					0
-		yPos					0
-		wide					30
-		tall					15
-		zpos		"2000"
-		labelText				"ø"
-		textAlignment			center
-		font			"NewIcons12"
-		command				"engine workshop"
 
-		sound_depressed			"ui/buttonclick.wav"
-		sound_released			"ui/buttonclickrelease.wav"
-		
-				"defaultFgColor_override" 	"White"
-				"armedFgColor_override" 	"White"
 
-				"defaultBgColor_override" 	"Blank"
-				"armedBgColor_override" 	"Blank"
-
-			
-		paintBackground			0
-		"border_default"	"NoBorder"
-		
-		"image_drawcolor"	"Blank"		
-		"SubImage"
-		{
-			"visible"			"0"
-		}	
-	}
-	"MOTD_ShowButtonPanel"
-	{
-		"xpos"	"0"
-		"ypos"	"0"
-		"zpos"			"3000"	
-		wide					30
-		tall					15//p0.043
-		"pin_corner_to_sibling"					"PIN_TOPLEFT"
-		"pin_to_sibling_corner"					"PIN_TOPRIGHT"		
-		"pin_to_sibling"	"WorkshopButton"			
-		"MOTD_ShowButtonPanel_SB"
-		{
-			"ControlName"	"CExImageButton"
-			"fieldName"		"MOTD_ShowButtonPanel_SB"
-			"zpos"			"1"
-		wide					30
-		tall					15
-
-			"labelText"		"p"
-			"font"			"NewIcons12"
-			"textAlignment"	"center"
-			////	"0"
-			
-			"default"		"1"
-			
-					"defaultFgColor_override" 	"White"
-				"armedFgColor_override" 	"White"
-
-				"defaultBgColor_override" 	"Blank"
-				"armedBgColor_override" 	"Blank"
-
-			
-		
-		"depressedFgColor_override" "35 255 35 222"
-			"actionsignallevel" "2"
-			"Command"		"motd_show"
-			"sound_depressed"	"ui/buttonclick.wav"
-			"sound_released"	"ui/buttonclickrelease.wav"
-			"paintbackground" "0"
-			"SubImage"
-			{
-				"visible"			"0"
-				"image"			"replay/thumbnails/null"
-			}			
-		
-		}
-	}
 
 	"NewUserForumsButton"
 	{

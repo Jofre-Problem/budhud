@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/statsummary_embedded.res"
     #base    "../../#users/custom/resource/ui/statsummary_embedded.res"
     #base    "../../_stream/resource/ui/statsummary_embedded.res"
     #base    "../../_budhud/resource/ui/statsummary_embedded.res"

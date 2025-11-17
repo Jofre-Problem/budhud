@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/mainmenuoverride.res"
     #base    "../../#users/custom/resource/ui/mainmenuoverride.res"
     #base    "../../#users/custom/#customization/_enabled/bh_dev_menu1.res"
     #base    "../../#users/custom/#customization/_enabled/bh_menu_hidefavorites.res"

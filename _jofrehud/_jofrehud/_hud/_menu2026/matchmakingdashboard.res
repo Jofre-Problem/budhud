@@ -828,13 +828,13 @@
 			"zpos"			"100"
 			"wide"			"20"
 			"tall"			"16"
-			//
+			pinCorner 0
 			"visible"		"1"
 			//"enabled"		"1"
 			font					"NewIcons12"
 			textAlignment			west
 			labeltext				"Z"
-			
+			textinsety -0
 			
 			"Command"		"find_game"
 			"proportionaltoparent"	"1"

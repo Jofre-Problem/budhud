@@ -1,7 +1,7 @@
 "Resource/UI/ItemModelPanel.res"
 {
     "mouseoveritempanel"
-    {
+    { 
         "bh_ItemBG"
         {
             "ControlName"                                           "ImagePanel"

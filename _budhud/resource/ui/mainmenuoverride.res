@@ -231,7 +231,7 @@
 
         "ControlName"                                               "CExImageButton"
         "fieldName"                                                 "bh_Backpack"
-        "labelText"                                                 "#bh_Backpack"
+        "labelText"                                                  "#bh_Backpack"
         "font"                                                      "bh_Font20"
 
         "xpos"                                                      "0"

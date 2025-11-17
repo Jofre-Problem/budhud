@@ -477,7 +477,7 @@
 			"model_tall"	"34"	
 			"use_particle"			"1"	
 			"use_item_rendertarget" "1"	
-			"force_use_model"		"1"
+	//		"force_use_model"		"1"
 			"allow_rot"							"0"
 			}
 
@@ -497,7 +497,7 @@
 					"model_tall"	"34"	
 					"use_particle"			"1"	
 					"use_item_rendertarget" "1"	
-					"force_use_model"		"1"
+	//				"force_use_model"		"1"
 					"allow_rot"							"0"
 					}	
 			"wide" "80" 	
@@ -515,7 +515,7 @@
 			"model_tall"	"34"	
 			"use_particle"			"1"	
 			"use_item_rendertarget" "1"	
-			"force_use_model"		"1"
+	//		"force_use_model"		"1"
 			"allow_rot"							"0"
 			}			
 			"wide" "80"
@@ -533,7 +533,7 @@
 			"model_tall"	"34"	
 			"use_particle"			"1"	
 			"use_item_rendertarget" "1"	
-			"force_use_model"		"1"
+	//		"force_use_model"		"1"
 			"allow_rot"							"1"
 			}			
 			"wide" "80"

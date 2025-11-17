@@ -24,7 +24,7 @@
         "visible"                                                   "0"
     }
 
-    "StatData"
+    "StatData" 
     {
 
         "AveragesBG"

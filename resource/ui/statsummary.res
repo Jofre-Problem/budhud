@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/statsummary.res"
     #base    "../../#users/custom/resource/ui/statsummary.res"
     #base    "../../#users/custom/#customization/_enabled/bh_stats_hideloadingstats.res"
     #base    "../../#users/custom/#customization/_enabled/bh_stats_customimage.res"
