@@ -425,12 +425,12 @@ Scheme
 		}
 		"310"
 		{
-			"font"	"fonts/Renogare XHud.ttf"
+			"font"	"_jofrehud/fonts/Renogare XHud.ttf"
 			"name"	"Renogare Soft XHud"
 		}
 		"311"
 		{
-			"font"	"fonts/OpenSansExtraBold-Uber.ttf"
+			"font"	"_jofrehud/fonts/OpenSansExtraBold-Uber.ttf"
 			"name"	"OpenSansExtraboldUber"
 		}
 

@@ -673,7 +673,7 @@ Scheme
 		}
 	"131"
 		{
-			"font" "fonts/TF2 Class Icons.ttf"
+			"font" "_jofrehud/fonts/TF2 Class Icons.ttf"
 			"name" "TF2 Class Icons V2"
 			"english"
 			{
@@ -715,7 +715,7 @@ Scheme
 
 		"142"
 		{
-			"font" "fonts/Readyup XHud.otf"
+			"font" "_jofrehud/fonts/Readyup XHud.otf"
 			"name" "ReadyUp XHud"
 		}
 	}

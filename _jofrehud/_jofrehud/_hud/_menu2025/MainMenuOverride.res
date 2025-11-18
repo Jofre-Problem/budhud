@@ -1,7 +1,14 @@
+#base "../../_misc/+motd_main_only.res"
+#base "../../_misc/motd_fallback.res"
+#base "../../_misc/+safemode.res"
 #base "polybar_1_mm.res"
 #base "polyconfig1_mm.res"
 "j"
 {	
+  "MOTD_Panel"
+    {
+        "pin_to_sibling"                                            "nope"
+    }
 
     "bh_TopPin"
     {
@@ -79,7 +86,7 @@
 		paintBackground			0
 		"pin_corner_to_sibling"					"PIN_TOPLEFT"
 		"pin_to_sibling_corner"					"PIN_TOPRIGHT"		
-		"pin_to_sibling"	"MOTD_ShowButtonPanel"		
+		"pin_to_sibling"	"jp_news2"		
 	}		
 	"2_btn"
 	{
@@ -835,20 +842,18 @@
 		{
 			"wide"			"0"
 		}	
-	}	
+	}
+
 	"MOTD_ShowButtonPanel"
 	{
 		 "ControlName"                                               "EditablePanel"
-        "fieldname"                                                 "MOTD_ShowButtonPanel"
+        "fieldname"                                                 "jp_news2"
 		"xpos"	"0"
 		visible 1
 		"ypos"	"0"
-		"zpos"			"3000"	
+		"zpos"			"3001"	
 		wide					30
-		tall					15//p0.043
-		"pin_corner_to_sibling"					"PIN_TOPLEFT"
-		"pin_to_sibling_corner"					"PIN_TOPRIGHT"		
-		"pin_to_sibling"	"WorkshopButton"			
+		tall					15//p0.043		
 		"MOTD_ShowButtonPanel_SB"
 		{
 			"ControlName"	"CExImageButton"
@@ -868,7 +873,7 @@
 		armedFgColor_override		"notowhite"
 		
 		"depressedFgColor_override" "35 255 35 222"
-			"actionsignallevel" "2"
+		//	"actionsignallevel" "2"
 			"Command"		"motd_show"
 			"sound_depressed"	"ui/buttonclick.wav"
 			"sound_released"	"ui/buttonclickrelease.wav"
@@ -879,6 +884,21 @@
 				"image"			"replay/thumbnails/null"
 			}			
 		}
+	}
+	"jp_news2"
+	{
+		 "ControlName"                                               "EditablePanel"
+        "fieldname"                                                 "jp_news2"
+		"xpos"	"0"
+		visible 1
+		"ypos"	"0"
+		"zpos"			"3000"	
+		wide					30
+		tall					15//p0.043
+		"pin_corner_to_sibling"					"PIN_TOPLEFT"
+		"pin_to_sibling_corner"					"PIN_TOPRIGHT"		
+		"pin_to_sibling"	"WorkshopButton"			
+
 	}
 
 	"NewUserForumsButton"
@@ -1031,7 +1051,7 @@
 		paintBackground			0
 		"pin_corner_to_sibling"					"PIN_TOPLEFT"
 		"pin_to_sibling_corner"					"PIN_TOPRIGHT"		
-		"pin_to_sibling"	"MOTD_ShowButtonPanel"		
+		"pin_to_sibling"	"jp_news2"		
 	}		
 	"2_btn"
 	{

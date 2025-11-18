@@ -9,13 +9,13 @@
 		"ControlName"	"EditablePanel"
 		"fieldname"		"SafeMode"
 		"xpos"			"cs-0.5"
-		"ypos"			"15"
-		"zpos"			"500"
-		"wide"			"f0"
-		"tall"			"480-15"
+		"ypos"			"25"
+		"zpos"			"20000"
+		"wide"			"250"
+		"tall"			"433"
 		"visible"		"1"
 		//"enabled"		"1"
-		"bgcolor_override"	"g_brown"
+		"bgcolor_override"	"255 255 255 0"
 
 				"logotest"
 				{
@@ -440,15 +440,15 @@
 				"zpos"			"11"
 				"wide"										"p0.5"
 				"tall"										"25"
-				//
+				//////"autoResize"		"0"
 				//"pinCorner"		"3"
 				"visible"		"0"
 				//"enabled"		"1"
-				
+				////	"0"
 				"use_proportional_insets" "1"
 				"font"			"ControlPointTimer"
 				"textAlignment"	"center"
-				
+				////	"0"
 				
 				"default"		"1"
 
@@ -478,15 +478,15 @@
 				"zpos"			"11"
 				"wide"										"p0.5"
 				"tall"										"25"
-				//
+				//////"autoResize"		"0"
 				//"pinCorner"		"3"
 				"visible"		"0"
 				//"enabled"		"1"
-				
+				////	"0"
 				"use_proportional_insets" "1"
 				"font"			"ControlPointTimer"
 				"textAlignment"	"center"
-				
+				////	"0"
 				
 				"default"		"1"
 
