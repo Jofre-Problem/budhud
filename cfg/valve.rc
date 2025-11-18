@@ -1,3 +1,12 @@
+
+    vgui_ui_scale_factor_deck_additional 0
+
+    sv_pure -1
+    echo [JOFREHUD] Applied default settings
+    echo [JOFREHUD] Applying HUD settings...
+    exec "hud/jofrehud.cfg"
+
+
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     // HUD commands to run BEFORE user configurations.
     // This way, we allow users to override them.

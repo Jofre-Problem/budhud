@@ -1,0 +1,3 @@
+#base "../_jofrehud/_mainstream/_qol/hex-voice/voicecommands.txt"
+//works?
+// if empty voice_menu_? doesnt work.

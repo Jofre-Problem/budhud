@@ -1,3 +1,4 @@
+    #base    "../../_jofrehud/resource/ui/pvprankpanel.res"
     #base    "../../#users/custom/resource/ui/pvprankpanel.res"
     #base    "../../#users/custom/#customization/_enabled/bh_menu_hidestats.res"
     #base    "../../#users/jayhyunpae/#customization/_enabled/bh_menu_hidestats.res"

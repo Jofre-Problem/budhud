@@ -11,13 +11,13 @@
 		"fieldName"		"MOTD_Panel"
 		"xpos"			"0"
 		"ypos"			"15"
-		"zpos"			"11000"
+		"zpos"			"40"
 		"wide"			"f0"
-		"tall"			"480"
+		"tall"			"440"
 		"border"	"noborder"
 		"bgcolor_override"	"7 27 27 0"
 		"fillcolor"	"7 27 27 0"
-		visible 1
+		visible 0
 
 				"ControlName"			"EditablePanel"
 		"SideBar1"

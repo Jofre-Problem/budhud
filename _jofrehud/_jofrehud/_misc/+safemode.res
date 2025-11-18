@@ -10,7 +10,7 @@
 		"fieldname"		"SafeMode"
 		"xpos"			"cs-0.5"
 		"ypos"			"25"
-		"zpos"			"20000"
+		"zpos"			"50"
 		"wide"			"250"
 		"tall"			"433"
 		"visible"		"1"
