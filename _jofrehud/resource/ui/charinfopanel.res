@@ -84,7 +84,7 @@
 		"enabled"				"1"
 		"scaleimage"			"1"
 		"wide"	"f0"
-		"tall"	"f0"
+		"tall"	"482"
 		"zpos"					"-1000"
 	}	
 

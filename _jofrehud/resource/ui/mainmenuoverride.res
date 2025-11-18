@@ -33,7 +33,7 @@
 				"font"		"default"//"Symbols 26"
 				"labelText"		"benchark"
 				"textAlignment"		"south"
-
+visible 0
 				xpos c0
 				"ypos"		"rs1"
 				"wide"		"80"

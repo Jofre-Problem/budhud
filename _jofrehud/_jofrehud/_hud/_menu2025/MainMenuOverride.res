@@ -1704,7 +1704,7 @@
 					"xpos"			"0"
 					"ypos"			"0"
 					"wide"			"p1"
-					"tall"			"p1"
+					"tall"			"480"
 					"visible"		"1"
 					"proportionaltoparent"	"1"
 					"image"			"replay/thumbnails/hp/REFRACTblur"
@@ -2437,5 +2437,329 @@
 
 		}
 	}
-	}							
+	}	
+
+			"QuickPlayExpandable"
+		{
+			"ControlName"		"CMatchHistoryEntryPanel"
+			"fieldName"		"QuickPlayExpandable"
+			"wide"		"184"
+			"tall"		"24"
+			"visible"	"1"
+			"ypos" "0"
+			"xpos" "cs-0.5"
+			"collapsed_height"	"24"
+			"expanded_height"	"219"
+			"resize_time"		"0.05"
+			"zpos" "1000"
+			"ignorescheme"	"1"
+			
+		//expand_direction "left"
+			"toggle"
+			{
+				"ControlName"	"Button"
+				"xpos"		"0"
+				"wide"		"f0"
+				"tall"		"14"
+				"visible"	"1"
+				"labelText"	"v"
+				"font"		"Newicons20"
+				"command"	"toggle_collapse"
+				"textAlignment"	"center"
+				"proportionaltoparent"	"1"
+				"button_activation_type"	"1"
+
+				"sound_depressed"	"UI/buttonclick.wav"
+				"sound_released"	"UI/buttonclickrelease.wav"
+				"border" "g_targetborder"
+				"paintbackground"	"1"
+	
+			}
+			"RandomPinnerThatWorks" //leftover
+			{
+				"ControlName"	"CExButton"
+				"fieldName"		"RandomPinnerThatWorks"
+				"font"		"NewIcons10"//"Symbols 26"
+				"labelText"		"}"
+				"textAlignment"		"south"
+				"textinsety"		"0"
+				"use_proportional_insets"	"1"
+
+
+
+				"ypos"		"-185"
+
+
+
+
+				"wide"		"24"
+				"tall"		"24"
+				"visible"		"0"
+				"Command"		"url https://comfig.app/quickplay/?autostart=2"
+				"button_activation_type"	"1"
+
+				"sound_depressed"		"UI/buttonclick.wav"
+				"sound_released"		"UI/buttonclickrelease.wav"
+
+				"paintbackground"		"0"
+				"defaultFgColor_override"		"White"
+				"armedFgColor_override"		"MainTheme"
+				"alpha" "0"
+				"pinCorner"		"2"
+			}		
+			"RandomImagePanel"
+			{
+				"ControlName"		"EditablePanel"
+				"fieldName"		"RandomImagePanel"
+				"zpos"		"1"
+				"wide"		"182"
+				"tall"		"50"
+				"visible"	"1"		
+				
+				"pin_to_sibling"		"RandomPinnerThatWorks"
+				"PartySlot0"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot0"
+						"xpos"		"2"
+						"ypos"		"2"
+						"zpos"		"99"
+						"wide"		"30"
+						"tall"		"o1"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"0"
+					}
+					"PartySlot1"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot1"
+						"zpos"		"99"
+						"wide"		"30"
+						"tall"		"o1"		"visible_minmode" "0"
+		"wide_minmode" "0"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"1"
+
+						"pin_to_sibling"		"PartySlot0"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+					}
+					"PartySlot2"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot2"
+						"zpos"		"99"
+						"wide"		"30"		"visible_minmode" "0"
+		"wide_minmode" "0"
+						"tall"		"o1"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"2"
+
+						"pin_to_sibling"		"PartySlot1"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+					}
+					"PartySlot3"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot3"
+						"zpos"		"99"
+						"wide"		"30"		"visible_minmode" "0"
+		"wide_minmode" "0"
+						"tall"		"o1"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"3"
+
+						"pin_to_sibling"		"PartySlot2"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+					}
+					"PartySlot4"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot4"
+						"zpos"		"99"
+						"wide"		"30"
+						"tall"		"o1"		"visible_minmode" "0"
+		"wide_minmode" "0"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"4"
+
+						"pin_to_sibling"		"PartySlot3"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+					}
+					"PartySlot5"
+					{
+						"ControlName"		"CDashboardPartyMember"
+						"fieldName"		"PartySlot5"
+						"zpos"		"99"
+						"wide"		"30"
+						"tall"		"o1"		"visible_minmode" "0"
+		"wide_minmode" "0"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"1"
+						"keyboardinputenabled"		"0"
+
+						"party_slot"		"5"
+
+						"pin_to_sibling"		"PartySlot4"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+					}
+					"PartySlotbg"
+					{
+						"ControlName"		"panel"
+						"fieldName"		"PartySlotbg"
+						"zpos"		"0"
+						"wide"		"187"
+						"tall"		"30"
+						"ypos" "1"
+						"visible"		"1"
+						"enabled"		"1"
+						"proportionaltoparent"		"1"
+						"mouseinputenabled"		"0"
+						"border"					"FLAT_Black_2"
+					}		
+		"l4d2pic1"
+			{
+				ControlName				ImagePanel
+				fieldName				"l4d2pic1"
+				xpos					0
+				ypos					0
+				wide					30
+				tall					o1
+				proportionaltoparent		1
+				image					"replay/thumbnails/l4d2/s_panel_lobby_mechanic"
+				scaleImage				1
+						"pin_to_sibling" "PartySlot0"
+						"pin_corner_to_sibling"		"0"
+						"pin_to_sibling_corner"		"1"
+			}	
+			"l4d2pic2"
+			{
+				ControlName				ImagePanel
+				fieldName				"l4d2pic2"
+				xpos					0
+				ypos					0
+				wide					30
+				tall					o1
+				proportionaltoparent		1
+				image					"replay/thumbnails/l4d2/s_panel_lobby_coach"
+				scaleImage				1
+			"pin_to_sibling" "l4d2pic1"
+		"pin_corner_to_sibling"					"PIN_TOPLEFT"
+		"pin_to_sibling_corner"					"PIN_TOPRIGHT"
+			}
+			"l4d2pic3"
+			{
+				ControlName				ImagePanel
+				fieldName				"l4d2pic3"
+				xpos					0
+				ypos					0
+				wide					30
+				tall					o1
+				proportionaltoparent		1
+				image					"replay/thumbnails/l4d2/s_panel_lobby_gambler"
+				scaleImage				1
+			"pin_to_sibling" "l4d2pic2"
+		"pin_corner_to_sibling"					"PIN_TOPLEFT"
+		"pin_to_sibling_corner"					"PIN_TOPRIGHT"
+			}
+			"l4d2pic4"
+			{
+				ControlName				ImagePanel
+				fieldName				"l4d2pic4"
+				xpos					0
+				ypos					0
+				wide					30
+				tall					o1
+				proportionaltoparent		1
+				image					"replay/thumbnails/l4d2/s_panel_lobby_producer"
+				scaleImage				1
+			"pin_to_sibling" "l4d2pic3"
+		"pin_corner_to_sibling"					"PIN_TOPLEFT"
+		"pin_to_sibling_corner"					"PIN_TOPRIGHT"
+			}	
+			"l4d2pic5"
+			{
+				ControlName				ImagePanel
+				fieldName				"l4d2pic5"
+				xpos					0
+				ypos					0
+				wide					30
+				tall					o1
+				proportionaltoparent		1
+				image					"replay/thumbnails/l4d2/goodguinick"
+				scaleImage				1
+			"pin_to_sibling" "l4d2pic4"
+		"pin_corner_to_sibling"					"PIN_TOPLEFT"
+		"pin_to_sibling_corner"					"PIN_TOPRIGHT"
+			}										
+					"NewUserForumsButton"
+					{
+						"ControlName"	"CExButton"
+						"fieldName"		"NewUserForumsButton"
+						"font"		"newicons15"
+						"labelText"		"u"
+						"textAlignment"		"center"
+						"use_proportional_insets"	"1"
+						"ypos"		"32"
+						"wide"		"187"
+						"tall"		"20"
+						"visible"		"0"
+						"Command"		"view_newuser_forums"
+						"button_activation_type"	"1"
+
+						"sound_depressed"		"UI/buttonclick.wav"
+						"sound_released"		"UI/buttonclickrelease.wav"
+						"border_default"				"FLAT_Black_2"
+						"border_armed"					"FLAT_Black_4"
+						"paintbackground"		"0"
+						"bgcolor_override" "0 0 0 120"
+						"defaultFgColor_override"		"White"
+						"armedFgColor_override"		"MainTheme"
+					}
+		}
+
+
+
+
+
+
+
+
+
+			"container"
+			{"visible"	"0"}
+			"BottomStats"
+			{"visible"	"0"}
+		}						
 }
