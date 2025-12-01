@@ -5,9 +5,10 @@
     echo [JOFREHUD] Applied default settings
     echo [JOFREHUD] Applying HUD settings...
     exec "hud/jofrehud.cfg"
-
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
+mat_hdr_level 1
+mat_motion_blur_strength 0
+ mat_viewportscale 0.9999999
+mat_motion_blur_enabled 1    ////////////////////////////////////////////////////////////////////////////////////////////////////
     // HUD commands to run BEFORE user configurations.
     // This way, we allow users to override them.
     // "stored" means the values are saved in config.cfg, so you don't need to

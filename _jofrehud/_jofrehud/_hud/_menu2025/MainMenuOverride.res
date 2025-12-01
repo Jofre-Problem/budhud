@@ -5,6 +5,33 @@
 #base "polyconfig1_mm.res"
 "j"
 {	
+  "Notifications_Panel"
+    {
+        "pin_to_sibling"                                            "nope"
+		zpos 9999
+        "xpos"                                                      "cs-0.5"
+        "ypos"                                                      "80"
+        "border"                                                    "bh_TooltipBG"
+
+        "Notifications_CloseButton"
+        {
+            "xpos"                                                  "179+1+1" // aligns this with individual alert close prompt
+            "ypos"                                                  "7"
+            "image_drawcolor"                                       "255 255 255 255"
+            "image_armedcolor"                                      "240 134 49 255"
+
+            "SubImage"
+            {
+                "image"                                             "replay/thumbnails/menu_icons/close"
+            }
+        }
+
+        "Notifications_TitleLabel"
+        {
+            "ypos"                                                  "6"
+            "fgcolor_override"                                      "bh_Theme_TextAccent"
+        }
+    }	
   "MOTD_Panel"
     {
         "pin_to_sibling"                                            "nope"
@@ -628,91 +655,6 @@
 	"StoreHasNewItemsImage"		//Possible use in the future
 	{
 		"wide"			"0"
-	}
-	"Notifications_Panel"
-	{
-		"ControlName"		"EditablePanel"
-		"fieldName"		"Notifications_Panel"
-		xPos					rs1-5
-		yPos					35
-		"zpos"		"999"
-		"wide"		"210"
-		"tall"		"80"
-		"visible"		"0"
-		"PaintBackgroundType"	"0"
-		"paintbackground"		"0"
-		"border"		"steamworkshopborder"
-
-		"Notifications_CloseButton"
-		{
-			"ControlName"		"CExImageButton"
-			"fieldName"		"Notifications_CloseButton"
-			"xpos"		"181"
-			"ypos"		"5"
-			"zpos"		"1000"
-			"wide"		"20"
-			"tall"		"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"labeltext"		"x"
-			"font"		"newicons20"
-			"textAlignment"		"center"
-			"actionsignallevel"		"2"
-
-			"Command"		"noti_hide"
-
-			"sound_depressed"		"UI/buttonclick.wav"
-			"sound_released"		"UI/buttonclickrelease.wav"
-
-			"paintbackground"		"0"
-			"defaultFgColor_override"		"White"
-			"armedFgColor_override"		"Red"
-
-					"SubImage"
-				{
-
-					"visible"		"0"
-				}
-		}
-
-		"Notifications_TitleLabel"
-		{
-			"ControlName"		"CExLabel"
-			"fieldName"		"Notifications_TitleLabel"
-			"font"		"Size 14"
-			"labelText"		"%notititle%"
-			"textAlignment"		"north-west"
-			"xpos"		"12"
-			"ypos"		"8"
-			"wide"		"250"
-			"tall"		"20"
-			"visible"		"1"
-			"enabled"		"1"
-			"fgcolor"		"White"
-			"wrap"		"1"
-		}
-
-		"Notifications_Scroller"
-		{
-			"ControlName"		"ScrollableEditablePanel"
-			"fieldName"		"Notifications_Scroller"
-			"xpos"		"8"
-			"ypos"		"25"
-			"wide"		"210"
-			"tall"		"135"
-			"PaintBackgroundType"		"0"
-			"paintbackground"		"0"
-			"fgcolor_override"		"Blank"
-
-			"Notifications_Control"
-			{
-				"ControlName"		"CMainMenuNotificationsControl"
-				"fieldName"		"Notifications_Control"
-				"wide"		"220"
-				"tall"		"135"
-				"visible"		"1"
-			}
-		}
 	}
 
 	"NoGCMessage"		
@@ -1338,100 +1280,7 @@
 	{
 		"visible"			"0"
 	}
-	"Notifications_Panel"
-	{
-		ControlName				EditablePanel
-		FieldName				"Notifications_Panel"
-		xPos					rs1-5
-		yPos					35
-		zPos					300
-		wide					210
-		tall					80
-		visible				0
-		border			"noborder"
 
-		"Notifications_CloseButton"
-		{
-			ControlName				CExButton
-			FieldName				"Notifications_CloseButton"
-			xPos					rs1
-			yPos					3
-			zPos					10
-			wide					16
-			tall					10
-			proportionalToParent		1
-
-			font					"Default"
-			labeltext				"x"
-			textAlignment			center
-			actionsignallevel			2
-
-			Command				"noti_hide"
-
-			sound_depressed			"ui/buttonclick.wav"
-			sound_released			"ui/buttonclickrelease.wav"
-		
-			defaultFgColor_override		"black"
-			defaultBgColor_override		"white"
-			armedBgColor_override		"Red"
-			armedFgColor_override		"white"
-
-			paintBackground			1
-		}		
-	
-		"Notifications_TitleLabel"
-		{
-			ControlName				CExLabel
-			FieldName				"Notifications_TitleLabel"
-			xPos					8
-			yPos					3
-			"zpos"					"100"
-			wide					f30
-			tall					10
-			proportionalToParent		1
-
-			font					"Default"
-			labelText				"%notititle%"
-			textAlignment			west
-			wrap					0
-			textInsetY				2
-			fgcolor_override		"white"
-			
-			paintBackground			0
-		}
-
-		"Notifications_Scroller"
-		{
-			ControlName				ScrollableEditablePanel
-			FieldName				"Notifications_Scroller"
-			xPos					3
-			yPos					22
-			wide					f3
-			tall					f25
-			proportionalToParent		1
-
-			fgcolor_override			"Primary"
-			
-			"Notifications_Control"		// width harcoded as parent - scrollbar
-			{
-				ControlName				CMainMenuNotificationsControl
-				FieldName				"Notifications_Control"
-				xPos					0
-				yPos					0
-				tall					f0
-				proportionalToParent		1
-
-				// => resource\ui\econ\NotificationToastControl.res"
-			}
-
-			"VerticalScrollBar"
-			{
-				xpos					rs1-1
-				wide					2
-				proportionalToParent		1
-			}
-		}
-	}
 
 	"NoGCMessage"		
 	{
